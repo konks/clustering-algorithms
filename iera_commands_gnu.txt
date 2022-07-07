@@ -1,0 +1,16 @@
+set xrange [-4:4]
+set xrange [-4:4]
+plot 'C:/3hell/Second/Second/iera/all_points_shag_15.txt' with points lc rgb 'purple' ,\
+'C:/3hell/Second/Second/iera/line_shag_15.txt' with lines lc rgb 'red',\
+'C:/3hell/Second/Second/iera/point_shag_15.txt' lc rgb 'green'
+
+set xrange [1:3]
+set yrange [1:3]
+set term gif animate delay 100
+set output "C:/3hell/Second/Second/ani_iera.gif" 
+set size square
+do for [i=1:18] {
+plot 'C:/3hell/Second/Second/iera/all_points_shag_'.i.'.txt' with points lc rgb 'blue',\
+'C:/3hell/Second/Second/iera/point_shag_'.i.'.txt' lc rgb 'red',\
+'C:/3hell/Second/Second/iera/line_shag_'.i.'.txt' with lines lc rgb 'green'
+}
