@@ -1,0 +1,79 @@
+INIT >> Comanda sozdaniya polya (obyazatel'naya comanda)
+
+
+GC mX mY dX dY N >> Comanda generazii oblakov s parametrami mX, mY (double) - tzentriy; dX, dY (double) - dispersii, N (int) - chislo tochek v oblake
+
+                              
+EXIT >> Comanda zaversheniya rabotiy 
+
+
+DISPLAY_POINT >> Comanda viyvida koordinat tochek v file (dlya kaszdogo oblaka otdel'niy fail)
+
+
+HELP >> Comanda pokaziyvaet spisok dostupniyh comand
+
+
+HISTOGRAM_FOR_FIELD N >> Ochevidno. N (int)- chislo otrezkov razbieniya
+
+
+HISTOGRAM_FOR_CLOUD N H >> Ochevidno. N (int)- chislo otrezkov razbieniya, H (int) - nomer oblaka
+
+
+GET_BUFFER_FOR_FIELD >> Ochevidno. 
+
+
+GET_BUFFER_FOR_CLOUD H >> Ochevidno. H (int) - nomer oblaka
+
+
+BUFFER_ROTATION X0 Y0 fi >> Ochevidno. X0, Y0 (double) - tzentr povorota, fi (double) - ygol povorota 
+
+
+BUFFER_HOMOTETIA X0 Y0 psi >> Ochevidno. X0, Y0 (double) - tzentr gomotetii, psi (double) - radius gomotetii
+
+
+BUFFER_SHIFT X0 Y0 >> Ochevidno. X0, Y0 (double) - vector sgviga
+
+
+SET_BUFFER >> Ochevidno
+
+
+MATRIX >> sozdanie matritziy rassoyaniy
+
+
+BINARY R >> sozdanie binarnoy matritzi s parametrov R (double) - rasstoyanie, kotoroe chitaem blizkim
+
+
+DBSCAN H G >> prisveivanie tochkam metki. H (int) - nomer matritziy, G (int) - gustota
+
+
+WAVE H >> volnovoe postroenie klasterov po matritze H (int)
+
+
+DBWAVE >> postroenie klasterov algoritmom dbscan (rabotaet tol'ko pisle comandiy DBSCAN)
+
+
+INFO_Find_Clusters >> viyvidit kolichestvo klasterov i sposob ih postroeniya
+
+
+DISPLAY_DBSCAN >> pechataet v failiy 'dist.txt', 'per.txt', 'core.txt' koordinatiy tochek
+
+
+STREE >> postroenie klasterov algoritmom minimal'nogo dereva
+
+
+K_MEANS K >> postroenie klasterov algoritmom K-means, gde K - kolichestvo klasterov
+
+
+EM_MEANS K >> postroenie klasterov algoritmom EM-means, gde K - kolichestvo klasterov
+
+
+K_MEANS_CORE K >> postroenie klasterov algoritmom K-means s yadromi, gde K - kolichestvo klasterov
+
+
+FOREL R P >> postroenie klasterov algoritmom forel, gde R - radius krugov, P - velichina izmeneniya radiusa
+
+
+IERA >> ierarhicheskiyi algoritm
+
+
+FACROR N >> nahojdenie factorov oblaka nomer N
